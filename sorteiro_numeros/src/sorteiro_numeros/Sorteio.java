@@ -7,13 +7,30 @@ public class Sorteio {
 		
 //		Este exemplo retorna um número entre dois valores definidos. O valor retornado será maior ou igual a min, e menor que max
 		
-		for (int cont = 0; cont < 6; cont++) {
-			int max = 1;
-			int min = 60;
-			int x = (int)(Math.random() * (max - min) + min);
+		int[] numeros = new int[6];
+		
+		int i = 0;
+		while(i<10) {
 			
-			System.out.println(x);
+			for (int cont = 0; cont < 6; cont++) {
+				
+				int max = 1;
+				int min = 60;
+				numeros[cont] = (int)(Math.random() * (max - min) + min);			
+				
+			}
+			
+			i++;
+			
+			for (int cont = 0; cont < 6; cont++) {
+				
+				System.out.print(numeros[cont]+ "-");				
+			}
+			
+			System.out.print("\n");					
 		}
+		
+		
 		
 		
 		
