@@ -24,7 +24,11 @@ public class Sorteio {
 			
 			for (int cont = 0; cont < 6; cont++) {
 				
-				System.out.print(numeros[cont]+ "-");				
+				System.out.print(numeros[cont]);
+				if (cont < 5) {
+					
+					System.out.print("-");
+				}
 			}
 			
 			System.out.print("\n");					
